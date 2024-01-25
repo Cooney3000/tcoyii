@@ -1,0 +1,11 @@
+body {
+    background-color: #ffb19b;
+}
+.navbar {
+    background-image:none;
+    /* background-color: rgb(74, 11, 0); */
+}
+.bg-area {
+    background-image: none;
+    background-color: rgb(95, 20, 1);
+}

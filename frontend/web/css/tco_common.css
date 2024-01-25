@@ -1,0 +1,130 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    margin-top: 3rem;
+}
+
+article h2 {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.navbar {
+    background-size: auto;
+    border-top: 5px solid #3cb371;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.navbar-nav .show>.nav-link,
+.navbar-nav .nav-link.active {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.btn {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.btn-link {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.btn-link.active,
+.btn-link {
+    color: #fff;
+}
+
+.content-table {
+    font-size: 0.8rem;
+}
+
+.content-table h2 {
+    font-size: 1rem;
+}
+
+.tco-table th {
+    background-color: #B0B0B0;
+}
+
+.tco-table tr:nth-child(even) {
+    background-color: #B0B0B0;
+}
+
+.tco-table tr:nth-child(odd) {
+    background-color: #DDDDDD;
+}
+
+.tco-table {
+    border-spacing: 0px;
+    line-height: 1.2rem;
+}
+
+.tco-tbl-small {
+    line-height: 0.9rem;
+    margin: 1.2rem 0 1.2rem 0;
+}
+
+.tco-table td {
+    padding: 5px 5px 5px 5px;
+
+}
+
+.tco-table th {
+    padding: 8px 5px 8px 5px;
+    font-weight: bold;
+}
+
+.euro {
+    text-align: right;
+}
+
+.mittig {
+    text-align: center;
+}
+#visitenkarten
+{
+	position:relative;
+}
+.visitenkarte
+{
+	float:left;
+	width:200px;
+	height:230px;
+/*
+	background-color:white;
+*/
+	font-size:0.8em;
+	margin: 5px 10px 0 0;
+	padding: 5px 5px 5px 5px; 
+	line-height: 1em;
+}
+.visitenkarte img
+{
+	height:177px;
+	border: 6px solid white;
+}
+.footer {
+    width:100%;
+    border-top: 5px solid #3cb371;
+}
