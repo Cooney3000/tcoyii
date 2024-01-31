@@ -35,7 +35,7 @@ h3 {
 }
 
 .nav-link {
-    color: #fff;
+    color: #fff !important ;
 }
 
 .btn {
@@ -127,4 +127,39 @@ h3 {
 .footer {
     width:100%;
     border-top: 5px solid #3cb371;
+}
+
+.scale-50-above-md {
+    width: 100%;
+    height: auto;
+}
+@media (min-width: 768px) { 
+    .scale-50-above-md {
+        width: 50%;
+        height: auto;
+    }
+}
+
+.cm-icon-container {
+    display: inline-flex; /* Use flex to center the icon */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 40px; /* Width of the circle */
+    height: 40px; /* Height of the circle, should be equal to width */
+    padding: 5px; /* Adjust padding as needed */
+    background-color: white;
+    border: 0.15em solid black;
+    border-radius: 50%; /* Makes it a circle */
+    cursor: pointer;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    margin: -3em 0 0 -0.2em;
+    transition: background-color 0.2s; /* Smooth transition for background color */
+}
+
+.icon-container:active {
+    background-color: grey !important; /* Grey background when active (clicked) */
+}
+
+.cm-icon-container .bi-arrow-left-right {
+    font-size: 1em; /* Adjust icon size */
 }

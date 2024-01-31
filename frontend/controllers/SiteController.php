@@ -2,7 +2,6 @@
 
 namespace frontend\controllers;
 
-use app\models\ToolCurrentStates as ModelsToolCurrentStates;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
@@ -16,7 +15,6 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\KontaktForm;
-use frontend\models\ToolCurrentStates;
 
 /**
  * Site controller
@@ -77,8 +75,9 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $model = new ModelsToolCurrentStates();
-        $gastroState = $model->getGastroState();
+        // $model = new ModelsToolCurrentStates();
+        // $gastroState = $model->getGastroState();
+        $gastroState = "geöffnet";  // ***TEST****
         return $this->render('index', [
             'gastroState' => $gastroState,
         ]);

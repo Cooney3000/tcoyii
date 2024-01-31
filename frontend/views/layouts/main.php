@@ -11,6 +11,7 @@ use yii\bootstrap5\Html;
 use yii\bootstrap5\Nav;
 use yii\bootstrap5\NavBar;
 
+common\assets\AppAsset::register($this);
 AppAsset::register($this);
 PublicAreaAsset::register($this);
 ?>
@@ -30,7 +31,6 @@ PublicAreaAsset::register($this);
 
 <body class="d-flex flex-column h-100">
     <?php $this->beginBody() ?>
-
     <header>
         <?php
         NavBar::begin([

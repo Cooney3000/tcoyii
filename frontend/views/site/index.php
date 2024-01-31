@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\Html;
+use frontend\components\CmContentWidget;
 
 /** @var yii\web\View $this */
 
@@ -58,7 +59,7 @@ $this->title = 'TC Olching - Start';
             <div class="row">
                 <article id="mias-club-kitchen" class="col mt-7">
                     <header>
-                        <h2>Willkommen in Mia's Küche: Herz der Clubgemeinschaft</h2>
+                        <h2>Willkommen in Mias Küche: Herz der Clubgemeinschaft</h2>
                     </header>
 
                     <h3>Fühl Dich wie zu Hause</h3>
@@ -68,16 +69,13 @@ $this->title = 'TC Olching - Start';
                     <p>Besuche uns Montag bis Freitag von 15:00 bis 22:00 Uhr und an Wochenenden von 09:00 bis 22:00 Uhr, ideal für eine Mahlzeit vor oder nach dem Match.</p>
 
                     <h3>Entdecke Mias Gastfreundschaft</h3>
-                    <p>Erlebe die Wärme und den Charme unserer Clubküche. Wir freuen uns darauf, Dich mit offenen Armen und köstlichen, hausgemachten Mahlzeiten zu begrüßen. Besuche uns und werde Sie Teil unserer Tennisfamilie!</p>
+                    <p>Erlebe die Wärme und den Charme unserer Clubküche. Wir freuen uns darauf, Dich mit offenen Armen und köstlichen, hausgemachten Mahlzeiten zu begrüßen. Besuche uns und werde Teil unserer Tennisfamilie!</p>
                     <!-- HIER GASTRO ÖFFNUNGSANZEIGE -->
                     <div class="mx-auto mt-3">
-                        Die Gaststätte ist jetzt
-                        <div class="btn <?php echo ($gastroState == 'geschlossen') ? 'traffic-red' : 'traffic-green'; ?> btn-sm ">
-                            <?= Html::encode($gastroState) ?>
-                        </div>
+                        Die Gaststätte ist jetzt <?= frontend\components\CmContentWidget::widget(['restrictByName' => 'status-gastro']) ?>
+                    </div>
                 </article>
 
-                <!-- Optional image, replace 'path_to_image.jpg' and 'alt text' with actual image path and description -->
                 <div class="col mt-5">
                     <img class="img-fluid col" src="/img/gaststaette/mia_goerzen.jpg" alt="Gemütliche Atmosphäre in Mias Clubküche">
 

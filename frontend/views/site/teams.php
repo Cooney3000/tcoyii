@@ -21,11 +21,11 @@ $this->title = 'TC Olching Teams';
                         <h2>Die Mannschaften des TC Olching</h2>
                     </header>
                     <a href="https://www.btv.de/de/mein-verein/vereinsseite/tc-olching.html#Mannschaften">Die Mannschaften des TC Olching beim BTV</a>
-                    <h2>Links zu wichtigen Tennisregeln, Wenn es mal zu Diskussionen kommt</h2>
+                    <h2>Links zu wichtigen Tennisregeln - wenn es mal zu Diskussionen kommt</h2>
                     <ul>
-                        <li><a href="https://www.btv.de/dam/jcr:2b0c670b-2ecd-4b1f-9564-f4f39a0f7e0d/btv_regeln_2022_IV_wettspielbestimmungen%20btv.pdf"> Die Durchführungsbestimmungen 2022</a></li>
-                        <li><a href="https://www.btv.de/de/der-btv/ueber-den-btv/regeln-und-ordnungen.html">Regeln / Ordnungen 2022 (BTV)</a></li>
-                        <li><a href="http://www.dtb-tennis.de/content/download/680/8523/version/3/file/Tennisregeln.pdf">Tennisregeln (ITF)</a></li>
+                        <li><a target="_blank" href="downloads/btv/btv_regeln_2023_interaktiv_270223.pdf"> Alle Regeln und Ordnungen (2023) des BTV</a></li>
+                        <li><a target="_blank" href="downloads/btv/btv_wettspielbedingungen_2023.pdf">Wettspielbedingungen 2023 (BTV)</a></li>
+                        <li><a target="_blank" href="downloads/btv/Tennisregeln der ITF.pdf">Die Tennisregeln (ITF)</a></li>
                     </ul>
                     </section>
                 </article>
