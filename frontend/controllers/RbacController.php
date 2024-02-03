@@ -119,11 +119,19 @@ class RbacController extends Controller
         $roles = $auth->getRoles();
         $roleHierarchy = [];
 
-        foreach ($roles as $roleName => $role) {
-            $children = $auth->getChildren($roleName);
-            $roleHierarchy[$roleName] = array_keys($children);
+        foreach ($roles as $role) {
+            $roleHierarchy[$role->name] = $this->getRecursiveChildren($role->name, $auth);
         }
 
         return $roleHierarchy;
+    }
+
+    private function getRecursiveChildren($roleName, $authManager, &$children = [])
+    {
+        $directChildren = $authManager->getChildren($roleName);
+        foreach ($directChildren as $child) {
+            $children[$child->name] = $this->getRecursiveChildren($child->name, $authManager, $children);
+        }
+        return array_keys($children);
     }
 }
