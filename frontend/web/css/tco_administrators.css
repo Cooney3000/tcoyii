@@ -1,0 +1,30 @@
+body {
+    background-color: #f4dada;
+}
+.navbar {
+    background-image:none;
+    /* background-color: rgb(74, 11, 0); */
+}
+.bg-area {
+    background-image: none;
+    background-color: #9a1f00;
+}
+.btn, btn-link, .btn:hover {
+    background-color: #9a1f00;
+    border-color: #9a1f00;
+    color: #fff;
+}
+.btn-close, .btn-close:hover {
+    background-color: #fff;
+}
+.btn:hover {
+    background-color: #621400;
+    border-color: #9a1f00;
+    color: #fff;
+    border-radius: 5px;
+}
+.cm-btn-close, .cm-btn-close:hover, .cm-btn-close.active {
+    background-color: #fff;
+    border-color: #fff;
+}
+

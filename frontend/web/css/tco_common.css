@@ -39,14 +39,12 @@ h3 {
 }
 
 .btn {
-    font-size: 1.3rem;
-    font-weight: 600;
+    font-size: 1em;
     color: #fff;
 }
 
 .btn-link {
     font-size: 1.2rem;
-    font-weight: 600;
     color: #fff;
 }
 
@@ -162,4 +160,18 @@ h3 {
 
 .cm-icon-container .bi-arrow-left-right {
     font-size: 1em; /* Adjust icon size */
+}
+
+.modal-body {
+    height: 100%;
+}
+
+.cm-modal-close, .cm-modal-close:hover, .cm-modal-close.active {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+
+.form-control {
+    height:300px;
 }

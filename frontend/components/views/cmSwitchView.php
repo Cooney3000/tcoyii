@@ -5,7 +5,7 @@ use yii\helpers\Url;
 
 echo '<span id="cm-content-item" class="switch-label ' . Html::encode($title) . '">' . Html::encode($title) . "</span>";
 
-if (Yii::$app->user->can('RestaurantAdministrator')) {
+if (Yii::$app->user->can('Gastronomie')) {
     echo '<span class="cm-icon-container" onclick="switchRestaurantState()">' .
         Html::tag('i', '', ['class' => 'bi bi-arrow-left-right']) .  // Using Bootstrap icon
         "</span>";

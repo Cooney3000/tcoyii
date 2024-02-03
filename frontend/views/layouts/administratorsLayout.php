@@ -5,14 +5,14 @@
 
 use common\widgets\Alert;
 use frontend\assets\AppAsset;
-use frontend\assets\ExecutivesAreaAsset;
+use frontend\assets\AdministratorsAreaAsset;
 use yii\bootstrap5\Breadcrumbs;
 use yii\bootstrap5\Html;
 use yii\bootstrap5\Nav;
 use yii\bootstrap5\NavBar;
 
 AppAsset::register($this);
-ExecutivesAreaAsset::register($this);
+AdministratorsAreaAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -33,22 +33,17 @@ ExecutivesAreaAsset::register($this);
     NavBar::begin([
         // 'brandLabel' => Yii::$app->name,
         'brandLabel' => '<img src="/img/global/TCO-Logo_text-white_80pxl.png" alt="TC Olching Logo">'.
-        '&nbsp;<img src="/img/tools/execs_v.png" alt="Bereich">',
+        '&nbsp;<img src="/img/tools/admin_v.png" alt="Bereich">',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar navbar-expand-md navbar-dark bg-area fixed-top',
         ],
     ]);
     $menuItems = [
-        ['label' => 'Events', 'url' => ['/executives/index']],
-        ['label' => 'Turnier', 'url' => ['/executives/tournaments']],
-        ['label' => 'Hall of Fame', 'url' => ['/executives/halloffame']],
-        ['label' => 'Platzbuchung', 'url' => ['/executives/booking']],
+        ['label' => 'Permissions', 'url' => ['/rbac/index']],
+        ['label' => 'MenuItem2', 'url' => ['/administrators/item2']],
     ];
-    if (Yii::$app->user->can('Administrator')) {
-        $menuItems[] = ['label' => 'Administratoren', 'url' => ['/administrators/index']];
-    }
-    $menuItems[] = ['label' => '[<<<]', 'url' => ['/members/index']];
+    $menuItems[] = ['label' => '[<<<]', 'url' => ['/executives/index']];
 
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav me-auto mb-2 mb-md-0 '],
